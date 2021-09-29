@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Open+Sans&family=Raleway&display=swap");
+
+:root {
+  --primary-color: purple;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 1rem 0.5rem;
+}
+
+.main-heading {
+  color: white;
+  font-family: "Cinzel", serif;
+}
+
+.nav-item{
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav {
+  text-align: right;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1,
+h3 {
+  margin: 0.5rem;
+}
+
+.quiz {
+  font-family: "Open Sans", sans-serif;
+}
+
+.quiz,
+.options,
+input {
+  list-style-type: lower-latin;
+  padding: 0.5rem;
+}
+
+.question {
+  margin: 0.5rem;
+  text-align: start;
+}
+
+button {
+  background-color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: larger;
+  border-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+footer {
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding: 1rem;
+}
+
+.inline-items{
+    display: inline;
+    padding: 0.5rem;
+}
+
+.input-label{
+    display: block;
+    color: var(--primary-color);
+    font-size: large;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.number-input{
+    border: 2px solid var(--primary-color);
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result{
+    margin: 1rem;
+}
