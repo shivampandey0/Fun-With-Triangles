@@ -6,7 +6,8 @@ const answers = ["90","right angled","one right angle", "12, 16, 20", "Equilater
 
 submit.addEventListener("click", calculate)
 
-function calculate() {
+function calculate(event) {
+    event.preventDefault();
 
     const formData = new FormData(quiz)
     let score =0, index =0;
