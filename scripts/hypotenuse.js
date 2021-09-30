@@ -7,10 +7,13 @@ submit.addEventListener("click", calculate)
 
 function calculate() {
 
-    if (base.value && height.value) {
-        showResult(Math.sqrt((base.value * base.value) + (height.value * height.value)))        
+    var baseA = Number(base.value);
+    var heightB = Number(height.value);
+
+    if (baseA >0 && heightB>0) {
+        showResult(Math.trunc(Math.sqrt((baseA * baseA) + (heightB * heightB))))        
     }else{
-        showError("Please enter both the sides.")
+        showError("Please enter valid values.")
     }    
 }
 

@@ -7,10 +7,13 @@ submit.addEventListener("click", calculateArea)
 
 function calculateArea() {
 
-    if (base.value && height.value) {
-        showResult((base.value * height.value) / 2)        
+    var baseA = Number(base.value);
+    var heightB = Number(height.value);
+
+    if (baseA >0 && heightB>0) {
+        showResult((baseA * heightB) / 2)        
     }else{
-        showError("Please enter both the sides.")
+        showError("Please enter valid values.")
     }    
 }
 
