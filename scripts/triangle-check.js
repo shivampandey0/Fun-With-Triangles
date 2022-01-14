@@ -4,9 +4,8 @@ const angle3 = document.querySelector(".angle3")
 const submit = document.querySelector(".calculate")
 const result = document.querySelector(".result")
 
-submit.addEventListener("click", calculate)
 
-function calculate() {
+const calculate = () =>{
 
     if (angle1.value && angle2.value && angle3) {
         if (Number(angle1.value) + Number(angle2.value) + Number(angle3.value) === 180) {
@@ -19,13 +18,14 @@ function calculate() {
     }    
 }
 
-function showResult(message) {
+const showResult = message=> {
     result.style.color = "black"
     result.innerText = message
 }
 
-function showError(message) {
+const showError = message => {
     result.style.color = "red"
     result.innerText = message
 }
 
+submit.addEventListener("click", calculate)

@@ -4,9 +4,8 @@ const result = document.querySelector(".result")
 
 const answers = ["90","right angled","one right angle", "12, 16, 20", "Equilateral triangle", "100", "30","a + b + c","no","45"];
 
-submit.addEventListener("click", calculate)
 
-function calculate(event) {
+const calculate = event => {
     event.preventDefault();
 
     const formData = new FormData(quiz)
@@ -20,3 +19,5 @@ function calculate(event) {
     }
     result.innerText = `Your score is ${score}`;
 }
+
+submit.addEventListener("click", calculate)
